@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="container">
+        <header>
+            <h1>Temperature Converter</h1>
+        </header>
+        <article>
+            <section>
+                <form id="converterForm">
+                    <fieldset>
+                        <legend>Temperature Conversion</legend>
+                        <label for="temperature">Enter Temperature:</label>
+                        <input type="text" id="temperature" name="temperature" required>
+                        <label for="unit">Select Unit:</label>
+                        <select id="unit" name="unit">
+                            <option value="celsius">Celsius</option>
+                            <option value="fahrenheit">Fahrenheit</option>
+                        </select>
+                        <button type="submit">Convert</button>
+                    </fieldset>
+                </form>
+            </section>
+            <section id="resultBox" class="result-box" hidden>
+                <h2>Conversion Result</h2>
+                <output id="result"></output>
+            </section>
+            <section id="formulaBox" class="formula-box">
+                <h2>Conversion Formulas</h2>
+                <p>To convert Celsius to Fahrenheit:</p>
+                <p><code>F = (C × 9/5) + 32</code></p>
+                <p>To convert Fahrenheit to Celsius:</p>
+                <p><code>C = (F - 32) × 5/9</code></p>
+            </section>
+        </article>
+        <footer>
+            <p>&copy; 2024 Temperature Converter. All rights reserved.</p>
+        </footer>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
