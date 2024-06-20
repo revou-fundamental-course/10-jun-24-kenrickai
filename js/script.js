@@ -8,7 +8,7 @@ document.getElementById('converterForm').addEventListener('submit', function(e) 
 
     // Validate the input
     if (isNaN(temperature) || temperature === '') {
-        result.textContent = 'Please enter a valid number.';
+        result.textContent = 'Invalid';
         resultBox.hidden = false;
         return;
     }
@@ -24,7 +24,7 @@ document.getElementById('converterForm').addEventListener('submit', function(e) 
         convertedTemperature = (temperature - 32) * 5/9;
         result.textContent = `${temperature}°F is equal to ${convertedTemperature.toFixed(2)}°C`;
     } else {
-        result.textContent = 'Invalid unit selected.';
+        result.textContent = 'Invalid';
     }
 
     resultBox.hidden = false;

@@ -3,27 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Temperature Converter</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Kenrick Temperature Conversion</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <main class="container">
         <header>
-            <h1>Temperature Converter</h1>
+            <section id="imageBox" class="image-box">
+                <h2>RevoU Software Engineer Final Project</h2>
+                <img src="https://www.coindesk.com/resizer/Wj_nRqML4SSkBQbdzkSe2h_h9iQ=/975x548/filters:quality(80):format(jpg)/cloudfront-us-east-1.images.arcpublishing.com/coindesk/HSEIMSNPGBDITNES2RXWY4TK4Q.jpg" style="max-width: 99%;max-height: 99%;">
+            </section>
+            <h2 style="text-align: center;">Website Converter Suhu</h2>
         </header>
         <article>
             <section>
                 <form id="converterForm">
                     <fieldset>
-                        <legend>Temperature Conversion</legend>
-                        <label for="temperature">Enter Temperature:</label>
+                        <h4>Masukan Suhu:</h4>
                         <input type="text" id="temperature" name="temperature" required>
-                        <label for="unit">Select Unit:</label>
+                        <h4>Pilih Konversi:</h4>
                         <select id="unit" name="unit">
                             <option value="celsius">Celsius</option>
                             <option value="fahrenheit">Fahrenheit</option>
                         </select>
-                        <button type="submit">Convert</button>
+                        <button type="submit">Konversi</button>
                     </fieldset>
                 </form>
             </section>
@@ -34,15 +37,15 @@
             <section id="formulaBox" class="formula-box">
                 <h2>Conversion Formulas</h2>
                 <p>To convert Celsius to Fahrenheit:</p>
-                <p><code>F = (C × 9/5) + 32</code></p>
+                <p><code>&#8457; = (&deg;C × 9/5) + 32</code></p>
                 <p>To convert Fahrenheit to Celsius:</p>
-                <p><code>C = (F - 32) × 5/9</code></p>
+                <p><code>&deg;C = (&#8457; - 32) × 5/9</code></p>
             </section>
         </article>
         <footer>
-            <p>&copy; 2024 Temperature Converter. All rights reserved.</p>
+            <p>&copy; RevoU FTW</p>
         </footer>
     </main>
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
